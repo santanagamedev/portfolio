@@ -62,7 +62,7 @@ h1 {
 /* Nav Bar */
 
 .navbar {
-    /* padding: 2rem; */
+    padding: 0rem 20rem;
     background-color: var(--black-grey-color);
 }
 
@@ -72,6 +72,11 @@ h1 {
     font-weight: 700;
     font-size: 0.8rem;
     text-transform: uppercase;
+    position: relative;
+}
+
+.navbar a i {
+    font-size: 1rem;
 }
 
 .navbar a:hover {
@@ -83,18 +88,18 @@ h1 {
     justify-content: space-between;
 }
 
-.nav-icon {
+/* .nav-icon {
     font-size: 1.4rem;
-    margin-right: 27.5px;
     display: inline-block;
     align-items: center;
     justify-content: center;
     padding: 0;
-}
-
+} */
 
 .nav-img {
-    width: 26px; 
+    width: 19px; 
+    position: absolute;
+    top: -3px;
 }
 
 .nav-img:hover {
@@ -146,8 +151,7 @@ h1 {
 }
 
 .hero-principal h1 {
-    color:  var(--red-color);
-
+    /* color: var(--red-color); */
 }
 
 .hero-principal h2 {
@@ -429,12 +433,15 @@ h1 {
     
     .overlay p {
         font-size: 18px;
-    }
-    
+    }    
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
     .navbar-brand {
         display: none;
     }    
+
+    .nav-img {        
+        position: relative;        
+    }
 }
