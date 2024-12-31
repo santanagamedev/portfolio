@@ -62,7 +62,7 @@ h1 {
 /* Nav Bar */
 
 .navbar {
-    padding: 0rem 20rem;
+    /* padding: 0rem 20rem; */
     background-color: var(--black-grey-color);
 }
 
@@ -436,7 +436,7 @@ h1 {
     }    
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
     .navbar-brand {
         display: none;
     }    
