@@ -33,16 +33,21 @@
   </head>
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid container">
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
             <a class="navbar-brand" href="#">
-                <img src="images/santana-logo-red.png" width="80" alt="Logo de la página web">
+              <img src="images/santana-logo-red.png" width="80" alt="Logo de la página web">
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link li-brand" aria-current="page" href="#">
+                  <img src="images/santana-logo-red.png" width="80" alt="Logo de la página web">
+                </a>
+              </li>                        
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#about-me">Sobre mí</a>
               </li>                        
@@ -67,61 +72,11 @@
                   <img class="nav-img" src="images/icon-artstation.svg" alt="">
                 </a>
               </li>
-              
-
             </ul>
           </div>
         </div>
     </nav>
-    <!--
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-toggler" >
-          <div class="row w-100">            
-            <div class="col-4 d-flex align-items-center">
-              <ul class="navbar-nav w-100 d-flex justify-content-end">
-                <li class="nav-item">
-                  <a href="https://www.linkedin.com/in/carlos-vargas-santana/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-linkedin nav-icon "></i>
-                  </a>
-                </li>                        
-                <li class="nav-item">
-                  <a href="https://github.com/santanagamedev" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github nav-icon"></i>
-                  </a>
-                </li>              
-                <li class="nav-item">
-                  <a href="https://santanacarlos.artstation.com/" target="_blank" rel="noopener noreferrer">
-                    <img class="nav-img" src="images/icon-artstation.svg" alt="">
-                  </a>
-                </li>                
-              </ul>
-            </div>    
-            <div class="col-4 d-flex justify-content-center align-items-center">
-              <a class="navbar-brand" href="#">
-                <img src="images/santana-logo-red.png" width="80" alt="Logo de la página web">
-              </a>
-            </div>    
-            <div class="col-4 d-flex align-items-center">
-              <ul class="navbar-nav w-100 d-flex justify-content-start">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#about-me">Sobre mí</a>
-                </li>                        
-                <li class="nav-item">
-                  <a class="nav-link" href="#proyects">Proyectos</a>
-                </li>              
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav> -->
+       
     <!-- Hero Section -->
     <section class="hero align-items-stretch position-relative">
         <div class="hero-principal">
@@ -135,6 +90,8 @@
         </div>   
         <video muted autoplay loop>
           <source src="./videos/background-video.mp4" type="video/mp4">
+          <!-- <source src="./videos/background-video.webm" type="video/webm"> -->
+          <!-- <source src="./videos/background-video.ogg" type="video/ogg"> -->
         </video>     
         <div class="mask-video"></div>
     </section>
