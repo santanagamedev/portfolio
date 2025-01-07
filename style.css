@@ -535,7 +535,9 @@ h1 {
     }
 
     #email-copied-notification {
-        
+        top: -20px; /* Ajusta la distancia de la burbuja en pantallas pequeñas */
+        font-size: 10px; /* Reduce el tamaño de fuente para adaptarse mejor */
+        padding: 4px 8px;
     }
 
 }
