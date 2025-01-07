@@ -1,7 +1,9 @@
 /* Genral Styles */
 :root {
     --red-color: #ff6565;
+    --aqua-color: #ff6565;
     --black-grey-color: #0b0b0b ;
+    
 } 
 body {
     margin: 0;
@@ -87,7 +89,15 @@ h1 {
     color: var(--red-color);
 }
 
+.navbar a:focus {
+    color: var(--red-color);
+}
+
 .navbar a:hover .nav-img {
+    content: url('images/icon-artstation-red.svg');
+}
+
+.navbar a:focus .nav-img {
     content: url('images/icon-artstation-red.svg');
 }
 
@@ -156,9 +166,10 @@ h1 {
     background-position: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-
-    background-blend-mode: multiply; /* Mezcla el gradiente con la imagen */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */    
+    /*
+    background-blend-mode: multiply; /* Mezcla el gradiente con la imagen 
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo negro semitransparente 
+    */
 }
 
 .hero-background.active {
@@ -210,6 +221,10 @@ h1 {
     color: var(--red-color);
 }
 
+.hero-links:focus {
+    color: var(--red-color);
+}
+
 #email-copied-notification {
     position: relative;
     top: 35px;
@@ -226,6 +241,12 @@ h1 {
     transition: opacity 0.3s ease-in-out;
     z-index: 100;
 }
+
+.notification-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
 
 
 /* About Me*/
@@ -508,11 +529,7 @@ h1 {
         padding: 0 2rem;
     }
 
-    #email-copied-notification {
-        top: -20px; /* Ajusta la distancia de la burbuja en pantallas pequeñas */
-        font-size: 10px; /* Reduce el tamaño de fuente para adaptarse mejor */
-        padding: 4px 8px;
-    }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -535,7 +552,8 @@ h1 {
     }
 
     #email-copied-notification {
-        top: -20px; /* Ajusta la distancia de la burbuja en pantallas pequeñas */
+        top: 35px; /* Ajusta la distancia de la burbuja en pantallas pequeñas */
+        right: 160px;
         font-size: 10px; /* Reduce el tamaño de fuente para adaptarse mejor */
         padding: 4px 8px;
     }
@@ -546,4 +564,4 @@ h1 {
     .li-brand {
         display: none;
     }
-    }
+}
