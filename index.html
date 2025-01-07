@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>    
+  <head>
     <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="author" content="Carlos Vargas Santana">
@@ -8,7 +8,7 @@
     <meta name="keywords" content="Unity, C#, Modelado 3D, Texturizado, Desarrollo Videojuegos, Maya, Blender, Substance Painter">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Carlos Vargas Santana - Desarrollador de Videojuegos | Artista 3D</title>
+    <title>Carlos Vargas Santana | Portfolio</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/icon-logo.jpg">
     <!-- Bootstrap -->
@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-<body>    
+<body>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-md">
         <div class="container">
@@ -40,20 +40,20 @@
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
             <a class="navbar-brand" href="#">
-              <img src="images/santana-logo-white.png" width="80" alt="Logo de la página web">
+              <img src="images/santana-logo-red.png" width="80" alt="Logo de la página web">
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
                 <a class="nav-link li-brand" aria-current="page" href="#">
                   <img src="images/santana-logo-red.png" width="80" alt="Logo de la página web">
                 </a>
-              </li>                        
+              </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#about-me">Sobre mí</a>
-              </li>                        
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#proyects">Proyectos</a>
-              </li>              
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contacto</a>
               </li>
@@ -75,7 +75,7 @@
             </ul>
           </div>
         </div>
-    </nav>       
+    </nav>
     <!-- Hero Section -->
     <section class="hero align-items-stretch position-relative">
         <div class="hero-backgrounds">
@@ -83,15 +83,25 @@
           <div class="hero-background" style="background-image: url(images/background-galery-02.jpg);"></div>
           <div class="hero-background" style="background-image: url(images/background-galery-03.jpg);"></div>
         </div>
-        <div class="hero-principal">
-            <img class="hero-image-dev rounded-circle" src="images/profile-photo.jpg" alt="Foto de Carlos Vargas Santana">
-            <h1 class="white-text">Carlos Vargas Santana </h1>
-            <h2 class="white-text">Desarrollador de Videojuegos y Artista 3D</h2>
+        <div class="hero-principal container d-flex align-items-center">
+            <!-- <img class="hero-image-dev rounded-circle" src="images/profile-photo.jpg" alt="Foto de Carlos Vargas Santana"> -->
+            <div>
+            <h1 class="white-text">
+              Soy Carlos Vargas Santana <br>
+              <span class="h1-red-word""> Artista 3d y Desarrollador de Videojuegos</span>
+            </h1>            
             <p class="white-text">
               <i class="bi bi-geo-alt-fill"></i>
-              Bogotá, Colombia
-            </p>
-        </div>   
+              Bogotá, Colombia              
+              <button class="hero-links" onclick="copyToClipboard('dev.santanacarlos.com'); return false;"><i class="bi bi-envelope"></i></button>
+                            
+              <a class="hero-links" href="https://drive.google.com/file/d/14BAce7oM7TWKxh1KaGDBFvNsty_KV6F0/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-person"></i></a>
+              
+              <span id="email-copied-notification" style="position: relative;">Correo copiado!</span>     
+            </p>     
+                              
+            </div>
+        </div>
     </section>
     <!-- About Me -->
     <section id="about-me"  class="about-me dark-section">
@@ -99,7 +109,7 @@
         <div class="">
             <h2 class="title-section white-text">Sobre mí</h2>
             <p class="text-section">
-              Soy un apasionado del CGI y los videojuegos, viviendo una doble vida: como artista 3D, creo entornos y doy forma a mundos digitales, y como programador, desarrollo la magia detrás de la interacción. Esta dualidad me permite crear un universo donde la creatividad y la tecnología se fusionan.
+              Soy un Artista 3D y desarrollor de videojuegos apacionado por la creación de mundos digitales.Soy un apasionado por la creación de entornos y accesorios 3d para animación y videojuegos como también por la creación e integración de la lógica de un videojuego.
             </p>
         </div>
         <div class="">
@@ -290,11 +300,12 @@
       <i class="bi bi-arrow-up-short"></i>
     </button>
 
-    
-    
+
+
     <script src="/js/go-to-top-btn.js"></script>
     <script src="/js/hero-background.js"></script>
     <script src="/js/navbar-toggler-icon.js"></script>
+    <script src="/js/email-copied-notification.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

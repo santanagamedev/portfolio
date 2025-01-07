@@ -16,8 +16,7 @@ section {
 }
 
 h1 {
-    font-size: 2.5rem;
-    /* font-family: "Roboto", sans-serif;     */
+    font-size: 2.75rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
 }
@@ -57,7 +56,11 @@ h1 {
 }
 
 .white-text {
-    color: white;
+    color: #f2f2f2;
+}
+
+.red-text {
+    color: var(--red-color);
 }
 
 /* Nav Bar */
@@ -68,7 +71,7 @@ h1 {
 }
 
 .navbar a {
-    color: #fff;
+    color: #f2f2f2;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 0.8rem;
@@ -137,9 +140,8 @@ h1 {
     /* background-color: #f6f7f8;
     min-height: 450px;
     text-align: center; */
-    min-height: 95vh;
+    min-height: 102vh;
     position: relative;
-
     overflow: hidden;
 }
 
@@ -155,8 +157,8 @@ h1 {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 
-    /*background-blend-mode: multiply; /* Mezcla el gradiente con la imagen */
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */    
+    background-blend-mode: multiply; /* Mezcla el gradiente con la imagen */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */    
 }
 
 .hero-background.active {
@@ -169,11 +171,10 @@ h1 {
     z-index: 1;
 }
 
-.hero-principal {
-    padding: 2.5rem;
-    text-align: center;
+.hero-principal {    
+    /* text-align: center; */
     position: relative;
-    z-index: 2;    
+    z-index: 2;
 }
 
 .hero-image-dev {
@@ -182,9 +183,9 @@ h1 {
     margin: 20px;
 }
 
-/* .hero-principal h1 {
-    color: var(--red-color)
-} */
+.h1-red-word {
+    color: var(--red-color);
+}
 
 .hero-principal h2 {
     font-size: 1.5rem;
@@ -195,6 +196,37 @@ h1 {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
 }
+
+.hero-links {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    color: #f2f2f2;    
+}
+
+.hero-links:hover {
+    color: var(--red-color);
+}
+
+#email-copied-notification {
+    position: relative;
+    top: 35px;
+    right: 180px;
+    transform: translateX(50%);
+    background: var(--red-color);
+    color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 100;
+}
+
 
 /* About Me*/
 
@@ -467,6 +499,20 @@ h1 {
     .overlay p {
         font-size: 18px;
     }    
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-principal {
+        padding: 0 2rem;
+    }
+
+    #email-copied-notification {
+        top: -20px; /* Ajusta la distancia de la burbuja en pantallas pequeñas */
+        font-size: 10px; /* Reduce el tamaño de fuente para adaptarse mejor */
+        padding: 4px 8px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -482,8 +528,15 @@ h1 {
         right: 12.5px;        
         width: 40px;
         height: 40px;
-      }
+    }
 
+    .hero-principal {
+        padding: 0 1.5rem;
+    }
+
+    #email-copied-notification {
+        
+    }
 
 }
 
