@@ -17,8 +17,8 @@ section {
     justify-content: center;
 }
 
-h1 {
-    font-size: 2.75rem;
+.hero-principal h1 {
+    font-size: 3.2rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
 }
@@ -35,8 +35,9 @@ h1 {
 
 .title-section {
     font-size: 2rem;
+    font-family: "Montserrat", sans-serif; ;
+    font-weight: 800;
     padding: 15px, 0;
-    font-family: "Roboto", sans-serif; ;
 }
 
 .description-section {
@@ -508,8 +509,6 @@ h1 {
     transform: scale(1.1);
 }
 
-
-
 /* Responsive */
 
 @media screen and (max-width: 400px) {
@@ -519,17 +518,7 @@ h1 {
     
     .overlay p {
         font-size: 18px;
-    }    
-
-    h1 {
-        font-size: 2.3rem;
-    }
-
-    .hero-principal {
-        padding: 0 2rem;
-    }
-
-    
+    }      
 }
 
 @media screen and (max-width: 767px) {
@@ -545,11 +534,11 @@ h1 {
         right: 12.5px;        
         width: 40px;
         height: 40px;
-    }
+    }        
 
-    .hero-principal {
-        padding: 0 1.5rem;
-    }
+    .hero-principal h1 {
+        font-size: 2.5rem;
+    }    
 
     #email-copied-notification {
         top: 35px; /* Ajusta la distancia de la burbuja en pantallas pequeñas */
@@ -557,7 +546,12 @@ h1 {
         font-size: 10px; /* Reduce el tamaño de fuente para adaptarse mejor */
         padding: 4px 8px;
     }
+}
 
+@media screen and (max-width: 1024px) {
+    .hero-principal h1 {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (min-width: 767px) {
