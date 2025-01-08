@@ -3,8 +3,8 @@
     --red-color: #ff6565;
     --aqua-color: #ff6565;
     --black-grey-color: #0b0b0b ;
-    
-} 
+
+}
 body {
     margin: 0;
     background-color: var(--black-grey-color);
@@ -24,7 +24,7 @@ section {
 }
 
 .dark-section {
-    color: #eceeec;
+    color: #f2f2f2;
     background-color: var(--black-grey-color);
 }
 
@@ -131,14 +131,14 @@ section {
 .navbar-toggler-icon:hover path {
     stroke: rgba(255, 101, 101, 1); /* Color de las líneas en hover */
   }
-  
+
   .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
 }
 
 .nav-img {
-    width: 19px; 
+    width: 19px;
     position: absolute;
     top: -3px;
 
@@ -166,11 +166,7 @@ section {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /*
-    background-blend-mode: multiply; /* Mezcla el gradiente con la imagen 
-    background-color: rgba(0, 0, 0, 0.2); /* Fondo negro semitransparente 
-    */
+    transition: opacity 1s ease-in-out;    
 }
 
 .hero-background.active {
@@ -183,8 +179,7 @@ section {
     z-index: 1;
 }
 
-.hero-principal {    
-    /* text-align: center; */
+.hero-principal {
     position: relative;
     z-index: 2;
 }
@@ -215,7 +210,7 @@ section {
     padding: 0;
     font-size: 1.4rem;
     margin: 0 10px;
-    color: #f2f2f2;    
+    color: #f2f2f2;
 }
 
 .hero-links:hover {
@@ -253,14 +248,33 @@ section {
 /* About Me*/
 
 .about-me {
-    height: 500px;
     padding: 10px;
 }
 
 .about-me .container {
-    
+    max-width: 50%;
     text-align: left;
 }
+
+.about-second {
+    margin: 100px 0; 
+}
+
+.badges-container {
+    font-size:  20px;
+    margin: 10px 0;
+}
+
+.badges-container span {
+    background-color: var(--red-color);
+}
+
+.badge {
+    color: #f2f2f2;
+    font-weight: bold;
+    margin: 5px;
+}
+
 
 /* Experience */
 
@@ -297,7 +311,7 @@ section {
     margin: 10px 0;
 }
 
-.badges-container {
+/* .badges-container {
     font-size:  20px;
     font-weight: bold;
     margin: 10px 0;
@@ -305,7 +319,7 @@ section {
 
 .badge {
     margin: 5px;
-}
+} */
 
 /* Projects */
 
@@ -339,7 +353,7 @@ section {
 }
 
 .proyect {
-    position: relative;    
+    position: relative;
     background-color: var(--red-color);
 }
 
@@ -351,7 +365,7 @@ section {
     left: 50%;
     transform:  translate(-50%, -50%);
     text-align: center;
-    
+
 }
 
 .overlay p {
@@ -364,10 +378,10 @@ section {
 
 .proyect:hover img {
     opacity: 0.5;
-    
+
 }
 
-.proyect:hover .overlay {    
+.proyect:hover .overlay {
     opacity: 1;
 }
 
@@ -394,7 +408,7 @@ section {
 
 .contact .description {
     color: white;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
 .contact button {
@@ -457,12 +471,12 @@ section {
 
 .social-network-icons img {
     width: 32px;
-} 
+}
 
 .social-network-icons i {
     color: white;
     font-size: 1.5rem;
-} 
+}
 
 .social-network-icons a:hover {
     background-color: white;
@@ -503,7 +517,7 @@ section {
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 2;
 }
-  
+
 .back-to-top:hover {
     background-color: var(--red-color);
     transform: scale(1.1);
@@ -512,47 +526,54 @@ section {
 /* Responsive */
 
 @media screen and (max-width: 400px) {
-    .about-me {
-        height: 600px;
-    }
     
+
     .overlay p {
         font-size: 18px;
-    }      
+    }
 }
 
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
-    }    
-    
-    .nav-img {        
-        position: relative;        
+    }
+
+    .nav-img {
+        position: relative;
     }
 
     .back-to-top {
-        right: 12.5px;        
+        right: 12.5px;
         width: 40px;
         height: 40px;
-    }        
+    }
 
     .hero-principal h1 {
         font-size: 2.5rem;
-    }    
+    }
+
+    .about-me .container {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .about-second {
+        margin: 30px 0; 
+    }
 
     #email-copied-notification {
-        top: 35px; /* Ajusta la distancia de la burbuja en pantallas pequeñas */
+        top: 35px; 
         right: 160px;
-        font-size: 10px; /* Reduce el tamaño de fuente para adaptarse mejor */
+        font-size: 10px;
         padding: 4px 8px;
     }
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .hero-principal h1 {
         font-size: 3rem;
     }
-}
+} */
 
 @media screen and (min-width: 767px) {
     .li-brand {
