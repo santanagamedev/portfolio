@@ -166,7 +166,7 @@ section {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: opacity 1s ease-in-out;    
+    transition: opacity 1s ease-in-out;
 }
 
 .hero-background.active {
@@ -247,21 +247,29 @@ section {
 
 /* About Me*/
 
-.about-me {
+/* .about-me {
     padding: 10px;
+} */
+
+/* .about-me .container {
+    max-width: 80%;
+    text-align: left;
+} */
+
+section .about-me {
+    margin-top: 40px;
 }
 
-.about-me .container {
-    max-width: 50%;
-    text-align: left;
+section h2 {
+    margin-bottom: 18px;
 }
 
 .about-second {
-    margin: 100px 0; 
+    margin: 100px 0;
 }
 
 .badges-container {
-    font-size:  20px;
+    font-size:  18px;
     margin: 10px 0;
 }
 
@@ -270,21 +278,21 @@ section {
 }
 
 .badge {
-    color: #f2f2f2;
+    color: #f2f2f2;;
     font-weight: bold;
     margin: 5px;
 }
 
 
-/* Experience */
+/* cards */
 
-.experience {
-    padding: 40px 40px 60px 40px;
+.cards-container {
+    margin-top: 35px;
 }
 
-.experience .column {
-    padding: 20px;
-    border: 2px solid #8080804d;
+.cards-container .column {
+    padding: 20px 10px;
+    /* border: 2px solid #8080804d; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,34 +300,38 @@ section {
     transition: all 0.2s ease-in;
 }
 
-.experience .column:hover {
-    color: white;
-    background-color: #1b1b32;
+.cards-container .column:hover {
+    color: #f2f2f2;
+    background-color: #202020;
 }
 
-.experience i {
+.cards-container i.icon-education {
     font-size: 2rem;
-    color: greenyellow;
+    color: var(--red-color);
     background-color: black;
     padding: 10px 20px;
     border-radius: 50%;
 }
 
-.title-experience {
-    font-size: 25px;
+.title-card {
+    font-family: "Montserrat", sans-serif;
+    font-size: 23px;
     font-weight: bold;
     margin: 10px 0;
 }
 
-/* .badges-container {
-    font-size:  20px;
-    font-weight: bold;
-    margin: 10px 0;
+.educacion-section {
+    align-items: normal;
 }
 
-.badge {
-    margin: 5px;
-} */
+.educacion-section h2 {
+    margin-bottom: 0;
+}
+
+
+.educacion-section .column {
+    padding: 5px 10px;
+}
 
 /* Projects */
 
@@ -526,8 +538,6 @@ section {
 /* Responsive */
 
 @media screen and (max-width: 400px) {
-    
-
     .overlay p {
         font-size: 18px;
     }
@@ -558,11 +568,11 @@ section {
     }
 
     .about-second {
-        margin: 30px 0; 
+        margin: 30px 0;
     }
 
     #email-copied-notification {
-        top: 35px; 
+        top: 35px;
         right: 160px;
         font-size: 10px;
         padding: 4px 8px;
@@ -579,4 +589,10 @@ section {
     .li-brand {
         display: none;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    /* .about-me .container {
+        max-width: 50%;
+    } */
 }
