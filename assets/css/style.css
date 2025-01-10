@@ -3,6 +3,7 @@
     --red-color: #ff6565;
     --aqua-color: #35ffff;
     --black-grey-color: #0b0b0b ;
+    --white-text: #f2f2f2;
 
 }
 body {
@@ -14,11 +15,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;;
 }
 
 p{
     font-family: "Roboto";
+    color: var(--white-text);
 }
 
 .hero-principal h1 {
@@ -28,7 +30,7 @@ p{
 }
 
 .dark-section {
-    color: #f2f2f2;
+    color: var(--white-text);
     background-color: var(--black-grey-color);
 }
 
@@ -53,17 +55,13 @@ p{
     font-size: 1.1rem;
 }
 
-.btn-info {
-    font-size: 1.1rem;
-    margin: 20px;
-}
 
 .black-text {
     color: black;
 }
 
 .white-text {
-    color: #f2f2f2;
+    color: var(--white-text);
 }
 
 .red-text {
@@ -78,7 +76,7 @@ p{
 }
 
 .navbar a {
-    color: #f2f2f2;
+    color: var(--white-text);
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 0.8rem;
@@ -214,7 +212,7 @@ p{
     padding: 0;
     font-size: 1.4rem;
     margin: 0 10px;
-    color: #f2f2f2;
+    color: var(--white-text);
 }
 
 .hero-links:hover {
@@ -231,7 +229,7 @@ p{
     right: 180px;
     transform: translateX(50%);
     background: var(--red-color);
-    color: #f2f2f2;
+    color: var(--white-text);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px;
@@ -282,7 +280,7 @@ section h2 {
 }
 
 .badge {
-    color: #f2f2f2;
+    color: var(--white-text)2;
     font-weight: 600;
     margin: 5px;
 }
@@ -305,7 +303,7 @@ section h2 {
 }
 
 .cards-container .column:hover {
-    color: #f2f2f2;
+    color: var(--white-text);
     background-color: #202020;
 }
 
@@ -318,6 +316,7 @@ section h2 {
 }
 
 .title-card {
+    color: var(--white-text);
     font-family: "Montserrat", sans-serif;
     font-size: 23px;
     font-weight: bold;
@@ -340,7 +339,7 @@ section h2 {
 /* Projects */
 
 .recent-projects {
-    padding: 80px 0px;
+    padding: 15px 0px;
 }
 
 .custom-gutter {
@@ -360,7 +359,7 @@ section h2 {
 }
 
 .container-proyects {
-    padding:  60px 0;
+    padding:  30px 0;
     margin-bottom: 0px;
 }
 
@@ -388,7 +387,7 @@ section h2 {
     font-size: 25px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    color: #f2f2f2;
+    color: var(--white-text);
     margin-bottom: 0;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.74);
 }
@@ -400,6 +399,17 @@ section h2 {
 
 .proyect:hover .overlay {
     opacity: 1;
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    background-color: var(--red-color);
+    border: none;
+}
+
+.btn-info:hover {
+    color: var(--white-text);
+    background-color: #202020;
 }
 
 /* Contact */

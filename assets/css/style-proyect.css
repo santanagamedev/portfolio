@@ -1,0 +1,43 @@
+section .header-margin {
+    margin-top: 40px;
+}
+
+.carousel {
+    margin: 50px 0;
+}
+
+.image-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-breakdown{
+    margin: 80px 0;
+}
+
+.column-breakdown {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.column-breakdown h3 {
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .column-breakdown {
+        padding: 0 20px;
+    }
+
+    .column-breakdown h3 {
+        margin-bottom: 10px;
+    }
+
+    .text-section {
+        padding: 0 20px;
+    }    
+}
