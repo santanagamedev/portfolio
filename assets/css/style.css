@@ -1,7 +1,7 @@
 /* Genral Styles */
 :root {
     --red-color: #ff6565;
-    --aqua-color: #ff6565;
+    --aqua-color: #35ffff;
     --black-grey-color: #0b0b0b ;
 
 }
@@ -15,6 +15,10 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+p{
+    font-family: "Roboto";
 }
 
 .hero-principal h1 {
@@ -41,12 +45,12 @@ section {
 }
 
 .description-section {
-    font-size: 1.2rem;
+    font-size: 1.rem;
     color: #584e4e;
 }
 
 .text-section {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .btn-info {
@@ -278,8 +282,8 @@ section h2 {
 }
 
 .badge {
-    color: #f2f2f2;;
-    font-weight: bold;
+    color: #f2f2f2;
+    font-weight: 600;
     margin: 5px;
 }
 
