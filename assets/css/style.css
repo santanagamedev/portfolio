@@ -446,9 +446,13 @@ section h2 {
 #contact {
     padding: 20px;
     border-radius: 8px;
-    max-width: 500px;
     margin: 50px auto;
     font-family: "Montserrat", sans-serif;
+  }
+
+  .email-contact {
+    color: var(--red-color);
+    font-weight: bold;
   }
   
   /* Form styling */
@@ -502,13 +506,12 @@ section h2 {
 
 /* Footer */
 
-.footer {
-    min-height: 500px;
+footer {
+    margin-top: 50px;
 }
 
 .footer-logo {    
     width: 100px;
-    margin: 10px;
 }
 
 .footer-text {
@@ -518,9 +521,9 @@ section h2 {
     font-family: "Quicksand", serif;
 }
 
-/* .social-network-icons {
-    position: relative;
-} */
+.social-network-icons {
+    margin: 20px 0;
+}
 
 .social-network-icons a{
     width: 50px;
