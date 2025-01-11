@@ -15,3 +15,24 @@ function copyToClipboard(email) {
       }, 2000);
     });
   }
+
+
+  function copyToClipboardFooter(email) {
+    navigator.clipboard.writeText(email).then(() => {
+        const notificatioFooter = document.getElementById('email-copied-notification-footer');
+        
+        // Mostrar el span en el centro de la pantalla
+        notificatioFooter.style.display = 'block';
+        setTimeout(() => {
+          notificatioFooter.style.opacity = '1'; // Aparece suavemente
+        }, 10);
+
+        // Ocultar el span después de 2 segundos
+        setTimeout(() => {
+          notificatioFooter.style.opacity = '0'; // Desaparece suavemente
+            setTimeout(() => {
+              notificatioFooter.style.display = 'none'; // Ocultarlo completamente
+            }, 300); // Coincide con la duración de la transición
+        }, 2000);
+    });
+}
