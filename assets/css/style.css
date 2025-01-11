@@ -3,6 +3,7 @@
     --red-color: #ff6565;
     --aqua-color: #35ffff;
     --black-grey-color: #0b0b0b ;
+    --black-hover-color: #202020 ;
     --white-text: #f2f2f2;
 
 }
@@ -414,55 +415,63 @@ section h2 {
 
 /* Contact */
 
-.contact .container {
-    max-width: 1100px;
-    min-height: 200px;
+/* General styling for the contact section */
+#contact {
     padding: 20px;
-}
-
-.contact .rectangle {
-    margin-top: -5rem;
-    background-color: rgb(13, 110, 253);
-    border-radius: 10px;
-    box-shadow: 0px 1px 4px 1px;
-}
-
-.contact .row {
-    width: 100%;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 50px auto;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Form styling */
+  form {
     display: flex;
-    align-items: center;
-}
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  /* form label {
+    color: #555;
+    font-size: 16px;
+  } */
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--white-text);
+    border: 1px solid var(--white-text);
+    border-radius: 4px;
+  }
 
-.contact .description {
-    color: white;
-    font-size: 1.2rem;
-}
+  form input::placeholder,
+  form textarea::placeholder {
+  color: #20202075; /* Color gris suave para el placeholder */
+  }
 
-.contact button {
-    color: white;
-    font-weight: bold;
-    background-color: transparent;
-    border: 2px solid white;
-    padding: 1.25em 2em;
-    margin: 10px;
-    border-radius: 100px;
-    transition: all 0.2s ease-in-out;
-}
-
-.contact button:hover {
-    background-color: white;
-    color: black;
-}
-
-.contact button i {
-    color: white;
-    font-size: 1.3rem;
-    transition: all 0.2s ease-in-out;
-}
-
-.contact button:hover i {
-    color: black;
-}
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+  }
+  
+  form button {
+    padding: 5px;
+    font-size: 14px;
+    color: var(--white-text);
+    background-color: var(--red-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 25%; /* El botón ocupa todo el ancho disponible */
+  }
+  
+  form button:hover {
+    background-color: var(--black-hover-color);
+  }
 
 /* Footer */
 
@@ -592,6 +601,15 @@ section h2 {
         font-size: 10px;
         padding: 4px 8px;
     }
+
+    #contact {
+        max-width: 90%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
 }
 
 /* @media screen and (max-width: 1024px) {
@@ -611,3 +629,6 @@ section h2 {
         max-width: 50%;
     } */
 }
+
+
+  
