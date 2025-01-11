@@ -97,11 +97,11 @@ p{
     color: var(--red-color);
 }
 
-.navbar a:hover .nav-img {
+.navbar a:hover .artstation {
     content: url('/assets/images/icon-artstation-red.svg');
 }
 
-.navbar a:focus .nav-img {
+.navbar a:focus .artstation {
     content: url('/assets/images/icon-artstation-red.svg');
 }
 
