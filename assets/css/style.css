@@ -102,7 +102,7 @@ p{
     height: 1.1rem;
     top: 1px;
     display: inline-block;    
-    background-image: url('/assets/images/icon-artstation.svg');
+    background-image: url('/portfolio/assets/images/icon-artstation.svg');
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease; /* Efecto de transición opcional */
@@ -110,7 +110,7 @@ p{
   }
   
   .nav-link-icon.artstation:hover {
-    background-image: url('/assets/images/icon-artstation-red.svg');
+    background-image: url('/portfolio/assets/images/icon-artstation-red.svg');
   }
 
 .nav-link-icon.itch {
@@ -119,7 +119,7 @@ p{
     position: absolute;
     top: 30px;
     display: inline-block;    
-    background-image: url('/assets/images/icon-itch.svg');
+    background-image: url('/portfolio/assets/images/icon-itch.svg');
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease; /* Efecto de transición opcional */
@@ -127,7 +127,7 @@ p{
   }
   
   .nav-link-icon.itch:hover {
-    background-image: url('/assets/images/icon-itch-red.svg');
+    background-image: url('/portfolio/assets/images/icon-itch-red.svg');
   }
 
  
