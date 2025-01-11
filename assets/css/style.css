@@ -105,6 +105,14 @@ p{
     content: url('/assets/images/icon-artstation-red.svg');
 }
 
+.navbar a:hover .itch {
+    content: url('/assets/images/icon-itch-red.svg');
+}
+
+.navbar a:focus .itch {
+    content: url('/assets/images/icon-itch-red.svg');
+}
+
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
