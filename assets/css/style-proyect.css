@@ -15,6 +15,11 @@ section .header-margin {
     margin: 80px 0;
 }
 
+    .container-breakdown video {
+        width: 100%;
+        height: auto;
+    }
+
 .column-breakdown {
     padding: 0 40px;
     display: flex;
@@ -22,10 +27,21 @@ section .header-margin {
     align-items: center;
     justify-content: space-evenly;
     transition: all 0.2s ease-in;
-}
+}    
 
 .column-breakdown h3 {
     margin: 0;
+}
+
+.link-proyect {
+    color: #17a9da;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-proyect:hover {
+    color: #107091;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {

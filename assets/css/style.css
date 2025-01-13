@@ -110,7 +110,7 @@ p{
   }
   
   .nav-link-icon.artstation:hover {
-    background-image: url('/portfolio/assets/images/icon-artstation-red.svg');
+    background-image: url('/portfolio/assets/images/icon-artstation-blue.svg');
   }
 
 .nav-link-icon.itch {
@@ -127,7 +127,7 @@ p{
   }
   
   .nav-link-icon.itch:hover {
-    background-image: url('/portfolio/assets/images/icon-itch-red.svg');
+    background-image: url('/portfolio/assets/images/icon-itch-blue.svg');
   }
 
  
@@ -513,7 +513,6 @@ section h2 {
     font-size: 1.25rem;
     padding: 20px;
     margin-bottom: 30px;
-    font-family: "Quicksand", serif;
 }
 
 .social-network-icons {
